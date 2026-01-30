@@ -19,11 +19,6 @@ pipeline {
                 }
             }
         }
-        stage('Pre Deliver') {
-            steps {
-                echo "We are moving towards continuous delivery"
-            }
-        }
         stage('Deliver') { 
             steps {
                 sh './jenkins/scripts/deliver.sh' 
